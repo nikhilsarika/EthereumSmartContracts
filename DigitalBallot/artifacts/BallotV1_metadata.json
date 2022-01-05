@@ -6,6 +6,17 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "numProposals",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [],
 				"name": "state",
 				"outputs": [
@@ -16,6 +27,19 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum BallotV1.Phase",
+						"name": "x",
+						"type": "uint8"
+					}
+				],
+				"name": "stateChange",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -32,7 +56,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"DigitalBallot/BallotV1.sol": "BallotV1"
+			"DigitalBallot/BallotV2.sol": "BallotV1"
 		},
 		"evmVersion": "istanbul",
 		"libraries": {},
@@ -46,12 +70,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"DigitalBallot/BallotV1.sol": {
-			"keccak256": "0x09c288c723be3f7b8cab0f3db101a44c84105146ba47a236c7f07300d6ed0018",
+		"DigitalBallot/BallotV2.sol": {
+			"keccak256": "0xb9e6fe80a99223a7e3fb559120f2a0f7c7f9ee6c17b8b5efc4fd86ae0de35328",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://e492803b922b32406a99f0d7dffca0abe63fe6c35d9798196431b117ce012e6b",
-				"dweb:/ipfs/Qmb1R8be8WY4HQ7L8z24q4juCb2JJ4yYVyDokxN6ZUxFGM"
+				"bzz-raw://e276f39c45394da4475d52774e00b46b48be123c21fcbd31500528483ebbff82",
+				"dweb:/ipfs/QmS5zx57swRaoaxe9NVPyEbg23neq87Y7jV6dVd2ELreJ2"
 			]
 		}
 	},
